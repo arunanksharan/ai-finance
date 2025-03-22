@@ -1,4 +1,4 @@
-import { useState } from "react";
+import * as React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
@@ -66,7 +66,7 @@ type TradeTableProps = {
 };
 
 export function TradeTable({ trades, setTrades }: TradeTableProps) {
-  const [isOptionFields, setIsOptionFields] = useState(false);
+  const [isOptionFields, setIsOptionFields] = React.useState(false);
 
   // Initialize the form
   const form = useForm<z.infer<typeof tradeSchema>>({

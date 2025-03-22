@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import * as React from "react";
+import type { ChangeEvent } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
@@ -91,11 +92,11 @@ type PFEResult = {
 };
 
 export default function PFECalculator() {
-  const [activeTab, setActiveTab] = useState("manual");
-  const [trades, setTrades] = useState<z.infer<typeof tradeSchema>[]>([]);
-  const [isCalculating, setIsCalculating] = useState(false);
-  const [result, setResult] = useState<PFEResult | null>(null);
-  const [csvFile, setCsvFile] = useState<File | null>(null);
+  const [activeTab, setActiveTab] = React.useState("manual");
+  const [trades, setTrades] = React.useState<z.infer<typeof tradeSchema>[]>([]);
+  const [isCalculating, setIsCalculating] = React.useState(false);
+  const [result, setResult] = React.useState<PFEResult | null>(null);
+  const [csvFile, setCsvFile] = React.useState<File | null>(null);
 
   // Initialize the netting set form
   const nettingSetForm = useForm<z.infer<typeof nettingSetSchema>>({
