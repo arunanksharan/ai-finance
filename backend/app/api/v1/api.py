@@ -3,7 +3,7 @@ Main API router.
 """
 from fastapi import APIRouter
 
-from app.api.v1.endpoints import auth, finance_calculator, saccr, var, pfe, initial_margin
+from app.api.v1.endpoints import auth, finance_calculator, saccr, var, pfe, initial_margin, market_data
 
 api_router = APIRouter()
 
@@ -24,3 +24,6 @@ api_router.include_router(pfe.router, prefix="/pfe", tags=["pfe"])
 
 # Include Initial Margin calculator routes
 api_router.include_router(initial_margin.router, prefix="/initial-margin", tags=["initial-margin"])
+
+# Include Market Data Dashboard routes
+api_router.include_router(market_data.router, prefix="/market-data", tags=["market-data"])

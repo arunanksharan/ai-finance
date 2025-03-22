@@ -96,5 +96,9 @@ class Settings(BaseSettings):
     EMAILS_FROM_EMAIL: Optional[str] = ""
     EMAILS_FROM_NAME: Optional[str] = "Finance Tools Platform"
 
+    # Market Data API settings
+    ALPHA_VANTAGE_API_KEY: Optional[str] = ""
+    FINNHUB_API_KEY: Optional[str] = ""
+
 
 settings = Settings()
