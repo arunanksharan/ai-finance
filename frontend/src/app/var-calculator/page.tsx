@@ -37,7 +37,7 @@ import { Loader2 } from "lucide-react";
 import { toast } from "@/components/ui/use-toast";
 import { PortfolioTable } from "@/components/var/portfolio-table";
 import { VaRResultsDisplay } from "@/components/var/var-results-display";
-import { API_URL } from "@/lib/constants";
+import { API_URL } from "@/config/constants";
 
 // Define the schema for the form
 const formSchema = z.object({
