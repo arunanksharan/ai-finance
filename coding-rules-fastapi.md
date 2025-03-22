@@ -38,3 +38,9 @@ These rules will help you write clean, efficient, and maintainable Python code.
 15. Design the flow and architecture properly. Think good UI/UX design practices which makes the experience smooth and user-friendly.
 
 16. Think repeatedly before writing code.
+
+17. Use industry standard best practices.
+
+18. Design the data models and api interfaces properly.
+
+19. Ensure all credentials are loaded from environment variables.

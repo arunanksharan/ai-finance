@@ -4,13 +4,35 @@
 
 Style and Structure
 
+- Use industry standard best practices.
+- First plan out the flow of the code before writing it.
+- Create the necessary components from shadcn in the components/ui folder.
+- Ensure all imports are from the correct location or are existing.
+- Do not make any calls which require use of credentials from client side. Always use server side abilities (api routes etc) of nextjs.
+- Ensure all credentials are loaded from environment variables.
+
 Naming Conventions
+
+- Use meaningful names for variables, functions, and components.
 
 TypeScript Usage
 
-UI and Styling
+- Use TypeScript for all code.
+
+UI/UX and Styling
+
+- Think through a user experience for the given product specs and context and user interface design before writing code.
+- Create best UX flow for smooth user experience based on industry best practices.
+- Use Shadcn UI components for UI and styling.
+- Use Tailwind CSS for styling.
+- Use modern minimal aesthetics - white background, subtle shadows, and subtle colors primarily in blue and green palette.
+- Use responsive design for all components.
 
 Performance Optimization
+
+- Use React.memo for components that do not need to re-render on every change.
+- Use useMemo for calculations that do not need to be re-calculated on every render.
+- Use useCallback for functions that do not need to be re-created on every render.
 
 Other Rules need to follow:
 
