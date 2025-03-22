@@ -37,7 +37,7 @@ import { Loader2, Upload } from "lucide-react";
 import { toast } from "@/components/ui/use-toast";
 import { TransactionTable } from "@/components/saccr/transaction-table";
 import { SACCRResultsDisplay } from "@/components/saccr/saccr-results-display";
-import { API_URL } from "@/lib/constants";
+import { API_URL } from "@/config/constants";
 
 // Define the schema for the netting set form
 const nettingSetSchema = z.object({
